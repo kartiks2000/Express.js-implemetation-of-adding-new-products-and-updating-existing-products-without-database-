@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <%- include('addcss.ejs') %>
+        <title>Products...</title>
+    </head>
+    <body>
+        <%- include('nav.ejs') %>
+        <div class="box">
+            <h1>Products are listed below -: </h1>
+            <% for (let pro of products) { %>
+                <h1><%= pro.title %></h1>
+                <a href="/edit/<%= pro.id %>">EDIT</a>
+                <a href="/del/<%= pro.title %>">DELETE</a>
+            <% } %>    
+        </div>
+    </body>
+</html>

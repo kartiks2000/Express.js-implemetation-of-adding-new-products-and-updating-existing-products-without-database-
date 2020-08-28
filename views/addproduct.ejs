@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <%- include('addcss.ejs') %>
+        <title>Add Products...</title>
+    </head>
+    <body>
+        <%- include('nav.ejs') %>
+        <div class="box">
+            <form action="/addpro" method="POST">
+                <input type="text" placeholder="product name..." name="proname">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </body>
+</html>
